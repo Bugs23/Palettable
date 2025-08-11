@@ -5,8 +5,10 @@ const list = select.querySelector(".select__list");
 const getColorSchemeBtn = document.getElementById("get-color-scheme-btn");
 let selectedScheme = "";
 
-select.addEventListener("click", () => {
-  select.classList.toggle("open");
+select.addEventListener("click", (e) => {
+  if (e.target.classList.contains("select__selected")) {
+    select.classList.toggle("open");
+  }
 });
 
 list.addEventListener("click", (e) => {
