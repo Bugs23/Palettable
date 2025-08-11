@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palettable</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="app" id="app">
+      <nav class="navbar">
+        <div class="navbar__inner">
+          <div class="navbar__item navbar__item--color-picker">
+            <input type="color" id="color-picker-input" class="navbar__input" />
+          </div>
+          <div class="navbar__item navbar__item--select">
+            <div class="select" tabindex="0">
+              <div id="selected-scheme" class="select__selected">
+                Monochrome
+              </div>
+              <ul class="select__list">
+                <li data-value="monochrome">Monochrome</li>
+                <li data-value="monochrome-dark">Monochrome-dark</li>
+                <li data-value="monochrome-light">Monochrome-light</li>
+                <li data-value="analogic">Analogic</li>
+                <li data-value="complement">Complement</li>
+                <li data-value="analogic-complement">Analogic-complement</li>
+                <li data-value="triad">Triad</li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar__item navbar__item--btn">
+            <button id="get-color-scheme-btn" class="navbar__btn">
+              Get color scheme
+            </button>
+          </div>
+        </div>
+      </nav>
+      <main class="main-content">
+        <div id="scheme-colors-container" class="scheme-colors-container"></div>
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
