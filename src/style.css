@@ -349,7 +349,7 @@ NAVBAR
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 667px) {
+@media (max-width: 480px) {
   .navbar__inner {
     flex-direction: column;
   }
@@ -376,8 +376,8 @@ MAIN
   min-width: 0;
   display: flex;
   flex-direction: column;
-  border-right: 2px solid #333333;
-  border-left: 2px solid #333333;
+  border-right: 1px solid #333333;
+  border-left: 1px solid #333333;
 }
 
 .scheme-colors__block__color {
@@ -396,7 +396,7 @@ MAIN
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 667px) {
+@media (max-width: 480px) {
   .scheme-colors-container {
     flex-direction: column;
   }
@@ -413,8 +413,6 @@ MAIN
   }
 
   .scheme-colors__block__color-code {
-    display: flex;
-    align-self: ;
     flex: 1;
   }
 }
